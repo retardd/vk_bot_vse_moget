@@ -1,0 +1,15 @@
+vk_api==11.5.0
+requests==2.20.0
+beautifulsoup4==4.8.0
+bs4==0.0.1
+vk==2.0.2
+wikipedia==1.4.0
+psycopg2-binary==2.8.4
+Pillow==7.0.0
+emoji==0.5.4
+social_ethosa==0.6.4
+numpy==1.19.2
+pandas==1.1.4
+sklearn==0.0
+lxml==4.6.2
+pytelegrambotapi==4.0.1
