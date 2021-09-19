@@ -43,7 +43,6 @@ def main():
             sms = (str(event.text).lower())
             to = event.peer_id
 
-
             if sms == '/citgen' or sms == '/cg':
                 to_c = event.peer_id
                 cit_m = event.message_id
