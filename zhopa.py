@@ -9,6 +9,7 @@ from alld.generaldirectory.citgen import *
 from alld.generaldirectory.demotivator import *
 from alld.generaldirectory.databasedefs import *
 from alld.generaldirectory.telegramcfg import *
+from alld.generaldirectory.tensordefs import cloun as clounada
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
     bord = board()
 
     for event in longpoll.listen():
-        if event.type == VkEventType.MESSAGE_NEW and event.to_me and event.text and event.peer_id != 391653357:
+        if event.type == VkEventType.MESSAGE_NEW and event.to_me and event.text:
 
 
             sms = (str(event.text).lower())
@@ -50,6 +51,12 @@ def main():
                 cit_us = event.user_id
                 t = Thread(target=send_citgen, args=[to_c, cit_m, cit_us])
                 t.start()
+            elif sms == '/umoreska' or sms == '/umr':
+                tumor = Thread(target=umoreska, args=[to])
+                tumor.start()
+            elif sms == 'cloun':
+                tcloun = Thread(target=clounada, args=(to, event.message_id, event.user_id))
+                tcloun.start()
             elif sms == 'getan':
                 tanime = Thread(target=anime_moment, args=(event.message_id, to, ''))
                 tanime.start()

@@ -20,9 +20,9 @@ def face_detect(url):
         duck.append(h//4)
     return duck
 
-def cloun(url):
+def cloun2(url):
     tochki = face_detect(url)
-    nosik = Image.open('nosik.png').convert("RGBA")
+    nosik = Image.open('../../content/nosik.png').convert("RGBA")
     size = (tochki[2] // 4, tochki[2] // 4)
     nosik = nosik.resize(size)
     response = requests.get(url)
@@ -38,7 +38,7 @@ url = 'https://sun9-31.userapi.com/c855228/v855228794/19f86c/7lhAA3tXcA4.jpg'
 req = urlopen(url)
 arr = np.asarray(bytearray(req.read()), dtype=np.uint8)
 img = cv2.imdecode(arr, -1)
-nosik = Image.open('nosik.png').convert("RGBA")
+nosik = Image.open('../../content/nosik.png').convert("RGBA")
 
 classifier = CascadeClassifier('haarcascade_frontalface_default.xml')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

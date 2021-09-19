@@ -15,6 +15,16 @@ def transliteration(text):
     return newtext
 
 
+def umoreska(too):
+    wol = vk.wall.get(owner_id=-92876084, offset=random.randint(0, 25000))
+    vk.messages.send(
+        peer_id=too,
+        attachment="wall-92876084_" + str(wol['items'][0]['id']),
+        random_id=get_random_id(),
+        message=random.choice(['vash anek, ser', 'смейся сука', 'priyatnogo appetita', 'ВАШ АНЕКДОТ ДОСТАВЛЕН. ПОДТВЕРДИТЕ ПОЛУЧЕНИЕ ПОСЫЛКИ АХАХАХ-ОМ'])
+    )
+
+
 def anime_moment(mid, too, msgs):
     try:
         kvk = vk.messages.getById(message_ids=mid)
