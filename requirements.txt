@@ -1,5 +1,5 @@
 vk_api==11.5.0
-tensorflow-cpu==2.4.0
+tensorflow-cpu==2.6.0
 requests==2.26.0
 beautifulsoup4==4.8.0
 bs4==0.0.1
