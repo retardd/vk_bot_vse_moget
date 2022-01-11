@@ -52,9 +52,6 @@ def main():
             elif sms == '/umoreska' or sms == '/umr':
                 tumor = Thread(target=umoreska, args=[to])
                 tumor.start()
-            elif sms == 'cloun':
-                tcloun = Thread(target=clounada, args=(to, event.message_id, event.user_id))
-                tcloun.start()
             elif sms == 'getan':
                 tanime = Thread(target=anime_moment, args=(event.message_id, to, ''))
                 tanime.start()
