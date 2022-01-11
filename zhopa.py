@@ -9,7 +9,6 @@ from alld.generaldirectory.citgen import *
 from alld.generaldirectory.demotivator import *
 from alld.generaldirectory.databasedefs import *
 from alld.generaldirectory.telegramcfg import *
-from alld.generaldirectory.tensordefs import cloun as clounada
 
 
 def main():
