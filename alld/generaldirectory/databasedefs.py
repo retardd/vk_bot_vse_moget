@@ -2,7 +2,7 @@ from alld.generaldirectory.priority.mainvkcfg import *
 
 def connect():
     try:
-        DATABASE_URL = "postgres://mkvturrykbcvjx:1361c442dc89646c7327e5290c814986be0d38b7389d65e45b865ee011be966e@ec2-3-229-210-93.compute-1.amazonaws.com:5432/d95q82opf7m4mb"
+        DATABASE_URL = "postgres://tgbdcllkifyjlz:507c3b87c6e35a0440b928866b816e18e111cb9ad4bfcf8d27eabb1aa1a2db79@ec2-184-73-175-151.compute-1.amazonaws.com:5432/d50q8t4jgbgic9"
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         cur = conn.cursor()
     except:
