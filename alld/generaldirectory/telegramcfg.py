@@ -3,7 +3,7 @@ from alld.generaldirectory.priority.overall import *
 from alld.generaldirectory.priority.mainvkcfg import *
 import os
 
-bot = telebot.TeleBot("1971532251:AAF8hFaLjYmF4MiPC7k94yS7woezTS8sDA8")
+bot = telebot.TeleBot("")
 
 def get_from_vk(id, sms):
     docs = vk.messages.getById(message_ids=id)

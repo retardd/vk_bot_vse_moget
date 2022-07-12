@@ -1,7 +1,7 @@
 from alld.generaldirectory.priority.overall import *
 
 vk_session = vk_api.VkApi(
-    token='5bc7c2be19a2c1975351a8b5e3a6357f416b5d39246a4aa69286a9a700c220e11acf400c6dc3e4bcec43e')
+    token='')
 
 vk = vk_session.get_api()
 upload = VkUpload(vk_session)
