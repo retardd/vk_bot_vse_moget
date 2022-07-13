@@ -8,7 +8,7 @@
 
 Затестить можно здесь - https://vk.com/visocke
 
-Подключена БД Postgersql, но ничего особенного (vk_bot_vse_moget/alld/generaldirectory/databasedefs.py).
+Подключена БД Postgresql, но ничего особенного (vk_bot_vse_moget/alld/generaldirectory/databasedefs.py).
 
 Есть API vk и telegram.
 
